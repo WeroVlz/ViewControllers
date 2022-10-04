@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,9 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let principal = segue.destination as? ViewControllerPrincipal
         principal?.iniciaPara = "buena practica"
+        
+    }
+    @IBAction func crearCuenta(_ sender: Any) {
         
     }
 }

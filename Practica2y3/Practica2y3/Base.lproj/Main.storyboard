@@ -124,18 +124,71 @@
         <!--Crear cuenta-->
         <scene sceneID="cYZ-9g-b2Y">
             <objects>
-                <viewController id="jjm-x7-Clq" sceneMemberID="viewController">
+                <viewController id="jjm-x7-Clq" customClass="ViewControllerCrearCuenta" customModule="Practica2y3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tGg-vX-OgP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="W89-Rp-JT4">
+                                <rect key="frame" x="50" y="288" width="314" height="374"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Trt-gk-H53">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IY0-O8-onW">
+                                        <rect key="frame" x="0.0" y="55" width="314" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DIo-YX-0Eo">
+                                        <rect key="frame" x="0.0" y="109.5" width="314" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTL-KS-9Dt">
+                                        <rect key="frame" x="0.0" y="164.5" width="314" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Carrera" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5f-IG-aOR">
+                                        <rect key="frame" x="0.0" y="219.5" width="314" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Semestre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zv1-zI-SqS">
+                                        <rect key="frame" x="0.0" y="274.5" width="314" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFZ-nI-HX1">
+                                        <rect key="frame" x="0.0" y="329" width="314" height="45"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="crearCuenta:" destination="aBr-0b-46d" eventType="touchUpInside" id="aap-0t-MND"/>
+                                            <action selector="crearCuenta:" destination="jjm-x7-Clq" eventType="touchUpInside" id="bgE-BX-qLp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yXx-Ft-cy4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W89-Rp-JT4" firstAttribute="leading" secondItem="yXx-Ft-cy4" secondAttribute="leading" constant="50" id="Is9-bx-s7z"/>
+                            <constraint firstItem="yXx-Ft-cy4" firstAttribute="bottom" secondItem="W89-Rp-JT4" secondAttribute="bottom" constant="200" id="Xjf-vJ-una"/>
+                            <constraint firstItem="yXx-Ft-cy4" firstAttribute="trailing" secondItem="W89-Rp-JT4" secondAttribute="trailing" constant="50" id="Z5f-4K-xgA"/>
+                            <constraint firstItem="W89-Rp-JT4" firstAttribute="top" secondItem="yXx-Ft-cy4" secondAttribute="top" constant="200" id="ddn-8A-hAq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Crear cuenta" id="y9w-aB-Bxu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5V-Vi-9IN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="aBr-0b-46d" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-193" y="-551"/>
+            <point key="canvasLocation" x="-194.20289855072465" y="-551.11607142857144"/>
         </scene>
     </scenes>
     <resources>
