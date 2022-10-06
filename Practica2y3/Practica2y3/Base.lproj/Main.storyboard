@@ -184,6 +184,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Crear cuenta" id="y9w-aB-Bxu"/>
+                    <connections>
+                        <outlet property="apellido" destination="BTL-KS-9Dt" id="KD8-SD-I3c"/>
+                        <outlet property="carrera" destination="g5f-IG-aOR" id="F4u-9Q-ECF"/>
+                        <outlet property="contra" destination="IY0-O8-onW" id="JyD-ma-4ha"/>
+                        <outlet property="correo" destination="Trt-gk-H53" id="PCq-3i-Yzn"/>
+                        <outlet property="nombre" destination="DIo-YX-0Eo" id="7xI-Mh-YzI"/>
+                        <outlet property="semestre" destination="zv1-zI-SqS" id="zLq-w7-zs9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5V-Vi-9IN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="aBr-0b-46d" userLabel="Exit" sceneMemberID="exit"/>
